@@ -49,6 +49,7 @@ bin
 
 # python executables
 *.pyc
+*.py
 
 # temp files
 .*.*.swp
