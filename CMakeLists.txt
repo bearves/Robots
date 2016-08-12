@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
+set( CMAKE_EXPORT_COMPILE_COMMANDS 1 )
 # add prefix to every string in a variable
 FUNCTION(PREPEND var prefix)
    SET(listVar "")
@@ -66,9 +67,9 @@ set(XENOMAI_LINK_LIB native rtdm xenomai)
 set(ETHERLAB_INCL_DIR "/opt/etherlab/include")
 set(ETHERLAB_LINK_DIR "/opt/etherlab/lib")
 set(ETHERLAB_LINK_LIB ethercat rt)
-set(XSENS_INCL_DIR "/usr/Aris_Dependent/xsens/include")
-set(XSENS_LINK_LIB xdeviceclass xcommunication xstypes)
-set(XSENS_LINK_DIR "/usr/Aris_Dependent/xsens/lib")
+set(XSENS_INCL_DIR "/usr/IMU/include")
+set(XSENS_LINK_LIB IMU xcommunication xstypes)
+set(XSENS_LINK_DIR "/usr/IMU/lib")
 set(XNNITE_INCL_DIR "/usr/include/nite")#Driver for kinect
 set(XNNITE_LINK_DIR "/usr/lib")
 set(XNNITE_LINK_LIB )
