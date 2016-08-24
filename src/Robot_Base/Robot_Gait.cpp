@@ -139,7 +139,7 @@ namespace Robots
 			}
             else if (i.first == "require_zero")
             {
-                param.is_zeroing_required = true;
+                param.is_zeroing_required = std::stoi(i.second)==0 ? false : true;
             }
 			else
 			{
